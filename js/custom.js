@@ -231,8 +231,15 @@ $(function(){
              $("#ifPrintMore").html("적은");
         }
 
+		var asAirplane = (p*52/285).toFixed(1)+"km";
+		var asCar = (p*52/270).toFixed(1)+"km";
+		$("#asAirPlane").html(asAirplane);
+		$("#asCar").html(asCar);
+
         showResult();
    }
+
+
 
    var showResult = function(){
 	    $(".basket-fixed").hide();
@@ -290,6 +297,11 @@ $(function(){
                 totalFP += tempPrint;
             }
         }
+
+		/***임시로 조치해둠**/
+		var x = (23.146 / 11.8).toFixed(5);
+		totalFP = totalWeight*x;
+
         console.log(totalWeight, totalEmit, totalFP);
         drawResult(totalWeight, totalEmit, totalFP);
         return [totalWeight, totalEmit, totalFP];

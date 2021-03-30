@@ -332,7 +332,7 @@ width:100%; height: 100%; }
 .test-result-background { position: absolute; z-index:0; top: 0; left:0; right:0; bottom: 0; width:100%; height:100%;  }
 .test-result-body { position: relative; z-index:1; display:none; }
 .test-result-wrap { width: 100%; max-width: 850px;  margin: 0 auto; padding-top: 100px;}
-.test-paperTexture { width:100%; background: url("../img/paper-texture.jpg") repeat-y;  background-size: 100% auto; box-sizing: border-box; padding: 50px;}
+.test-paperTexture { width:100%; background: url("../img/paper-texture.jpg") repeat-y;  background-size: 100% auto; box-sizing: border-box; padding: 50px;border-radius: 4px 4px 0px 0px;}
 .test-result-wrap h2 { display: none;}
 .test-result-wrap .title-img { display:block; margin:0px auto; margin-bottom: 40px; width: 154px; }
 .test-result-wrap .title-img  img { width: 100%; margin: 0 auto;  border-bottom: 4px double #2834d0;padding-bottom: 10px; }
@@ -340,13 +340,13 @@ width:100%; height: 100%; }
 .test-result-wrap .result-list {  margin: 40px auto; }
 .test-result-wrap .result-list .each-result-row { width: 100%; box-sizing:border-box; padding: 0px 40px; margin: 50px auto;}
 .each-result-row .result-head {  text-align: center; color: #2834d0; color:#222; margin-bottom: 30px;}
-.each-result-row .result-head .number { font-size: 32px;}
-.each-result-row .result-head .text { font-size: 24px;  font-weight: bold;}
+.each-result-row .result-head .number { font-size: 32px; font-weight: 900;}
+.each-result-row .result-head .text { font-size: 22px;  font-weight: bold;}
 .each-result-row .result-body {width: 100%; }
 .each-result-row .result-body .result-text {}
 .each-result-row .result-body .result-text p { font-size: 20px; text-align: left;color: #222;margin: 20px auto; line-height: 1.7; letter-spacing: -0.3px;}
-.each-result-row .result-body .result-text p.semi { font-size: 16px; opacity: 0.8;}
-.each-result-row .result-body .result-text span.point { color:#2834d0; font-weight:bold;font-size: 22px;  padding: 0px 2px;  }
+.each-result-row .result-body .result-text p.semi { font-size: 14px; opacity: 0.8;}
+.each-result-row .result-body .result-text span.point { color: #232323; font-weight: bold;font-size: 20px;padding: 0px 5px;background: #dde5f7;border-radius: 2px; }
 .each-result-row .result-body .result-text span.sm { font-size: 14px; opacity: 0.8; }
 .each-result-row .result-body .result-graph {}
 
@@ -364,7 +364,7 @@ width:100%; height: 100%; }
 	}
 }
 
-.sec--result.result-show {background: #0c1040; }
+.sec--result.result-show { background: #1e28a2; }
 .sec--result.result-show .result-temp { display: none; }
 .sec--result.result-show .test-result-body {}
 
@@ -384,6 +384,9 @@ width:100%; height: 100%; }
 background: none; border-left: 1px dashed rgba(0,0,0,0.3);}
 .avr-line .line-body p { position: absolute; top: -20px; font-size: 12px; color: #4b4d50;  width: 100px; left: -30px;}
 
+.pole-graph .graph-body .pole-holder .pole-01 { background: #2834d0;}
+.pole-graph .graph-body .pole-holder .pole-02 { background: #3c3a42; }
+.each-pole .value { color:#fff; text-shadow: 1px 1px 0px #111;}
 
 .sec--outro { }
 .graph-holder { margin: 50px auto; }
@@ -392,9 +395,8 @@ background: none; border-left: 1px dashed rgba(0,0,0,0.3);}
 .graph-holder .graph-img img { display: block; margin: 0 auto;}
 .graph-holder .caption { max-width: 500px; width: 100%;font-size: 15px; text-align: left;  margin: 20px auto; color: #777;}
 
-.ref-box { display: none; max-width: 800px; margin: 50px auto;  box-sizing: border-box; padding: 30px;
-border-top: 1px solid #ddd; margin-top: 200px;line-height: 1.6; color: #56616b; font-size: 14.5px;}
-.ref-box .des { margin-bottom: 20px;}
+.ref-box { max-width: 800px; margin: 50px auto;  box-sizing: border-box; padding-top: 30px;border-top: 1px solid #ddd; margin-top: 100px;line-height: 1.6; color: #ddd; font-size: 14.5px; opacity: 0.5;}
+.ref-box .des { margin-bottom: 10px;}
 .ref-box ul {}
 .ref-box ul li {}
 .ref-box ul li span.head {font-weight: bold; margin-right: 20px;}
@@ -428,7 +430,7 @@ color: #fff;width: 100px;text-align: center;top: -20px;left: 50%;margin-left: -5
 .graph-holder .axis { position: absolute;}
 .graph-holder .y-axis { width: 50px; height:100%; top:0; left:-70px;}
 .graph-holder .x-axis { width:100%; bottom: -10px; left: 0; }
-.graph-holder .axis .each-tick { position: absolute; display: inline-block; color:#fff; opacity:0.6; font-size: 13.5px;}
+.graph-holder .axis .each-tick { position: absolute; display: inline-block; color:#fff; opacity:0.6; font-size: 12px;}
 .graph-holder .y-axis .each-tick { }
 .graph-holder .y-axis .each-tick .line {position: absolute; top:10px; left:60px; width:100px; height:1px; border-bottom: 1px dashed #fff;opacity: 0.4; }
 .graph-holder .x-axis .each-tick {text-align: center; }
@@ -762,7 +764,7 @@ background-size: 15px 15px; padding-right: 20px;background-position: right;  cur
 
 .each-result-row .result-body .result-text p { font-size: 16px; line-height:1.5;}
 .each-result-row .result-body .result-text span.point { font-size: 17px; }
-.each-result-row .result-body .result-text p.semi { font-size: 15px; }
+.each-result-row .result-body .result-text p.semi { font-size: 12px; }
 .pole-graph {padding-right: 10px;padding-left: 50px; }
 
 .graph-holder h2 { font-size: 20px; }
@@ -784,7 +786,7 @@ span.jump { display:block; }
 
 .section-list .sec--outro.darkMode { padding: 30px 0; }
 
-.ref-box {  font-size: 13.5px; margin-top: 70px; border: none; padding: 20px;}
+.ref-box {  font-size: 13.5px; margin: 0px auto; border: none; padding: 12px;}
 .banner-area-title .project-title { font-size: 18px; }
 .section-list .art-banner {  margin-bottom: 0; padding-bottom: 30px; margin-top: 0; border-top: 1px solid #313131; }
 .art-banner { padding: 50px 0;  }
