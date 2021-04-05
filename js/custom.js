@@ -58,31 +58,31 @@ $(function(){
 	var userSelectCountArr = [null,null,null,null];
     var userSelectValueArr = [false,false,false,false];
     var _data = [
-      {
-        "name": "일회용컵",
-        "weight": "13.84",
-        "emit": "8",
-        "footprint": "8"
-      },
-      {
-        "name": "비닐봉지",
-        "weight": "20",
-        "emit": "13",
-        "footprint": "13"
-      },
-      {
-        "name": "페트병",
-        "weight": "14.5",
-        "emit": "9",
-        "footprint": "9"
-      },
-      {
-        "name": "배달용기",
-        "weight": "19.28",
-        "emit": "17",
-        "footprint": "17"
-      }
-    ];
+	  {
+	    "name": "일회용컵",
+	    "weight": "14",
+	    "emit": "2.37",
+	    "footprint": "33.18"
+	  },
+	  {
+	    "name": "비닐봉지",
+	    "weight": "10",
+	    "emit": "1.86",
+	    "footprint": "18.6"
+	  },
+	  {
+	    "name": "페트병",
+	    "weight": "15",
+	    "emit": "2.37",
+	    "footprint": "35.55"
+	  },
+	  {
+	    "name": "배달용기",
+	    "weight": "44",
+	    "emit": "1.64",
+	    "footprint": "72.16"
+	  }
+	];
     var koreanAvrData = [11800, 23146]; //한국인 연간 사용 무게와 탄소발자국
 
     var totalWeight = 0,
@@ -129,7 +129,7 @@ $(function(){
 			$(itemClassStr).show();
 
 		}
-		printUserSelect();
+		//printUserSelect();
 	});
 
 	$(".cancel-btn").on("click", function(e){
@@ -156,7 +156,7 @@ $(function(){
 			userSelectCountArr[_ei] -= 1;
 		}
 		$(this).siblings(".count-view").find(".count-value").html(userSelectCountArr[_ei]);
-		printUserSelect();
+		//printUserSelect();
 	});
 
 	$up.on("click", function(e){
@@ -169,7 +169,7 @@ $(function(){
 		}
 		$(this).siblings(".count-view").find(".count-value").html(userSelectCountArr[_ei]);
 		addItemBasket(_ei, userSelectCountArr[_ei]);
-		printUserSelect();
+		//printUserSelect();
 	});
 
    function addItemBasket(item_type, count){
@@ -186,7 +186,7 @@ $(function(){
 	   $item.css({"left": x});
 	   $item.css({"bottom": "150px"});
 	   $item.css({"transform": "rotate("+rotate+"deg)", "-webkit-transform": "rotate("+rotate+"deg)"});
-	   $item.append("<img src='img/select-item-"+type+"-line.png' alt='사용한플라스틱'>")
+	   $item.append("<img src='http://img.khan.co.kr/spko/storytelling/2021/carbonprint/select-item-"+type+"-line.png' alt='사용한플라스틱'>")
 
 	   $basket.append($item);
 
@@ -220,15 +220,15 @@ $(function(){
         $("#printYear").html(reviseWeight(p*52));
 
         if(w*52>koreanAvrData[0]){
-            $("#ifWeightMore").html("많은");
+            $("#ifWeightMore").html("높은");
         }else{
-            $("#ifWeightMore").html("적은");
+            $("#ifWeightMore").html("낮은");
         }
 
         if(p*52>koreanAvrData[1]){
-            $("#ifPrintMore").html("많은");
+            $("#ifPrintMore").html("높은");
         }else{
-             $("#ifPrintMore").html("적은");
+             $("#ifPrintMore").html("낮은");
         }
 
 		var asAirplane = (p*52/285).toFixed(1)+"km";
@@ -298,9 +298,9 @@ $(function(){
             }
         }
 
-		/***임시로 조치해둠**/
+		/***임시로 조치해둠
 		var x = (23.146 / 11.8).toFixed(5);
-		totalFP = totalWeight*x;
+		totalFP = totalWeight*x;**/
 
         console.log(totalWeight, totalEmit, totalFP);
         drawResult(totalWeight, totalEmit, totalFP);
@@ -339,7 +339,7 @@ $(function(){
 
 
 	$("#GO_RESULT_BTN").on("click", function(e){
-		if( userSelectValueArr.includes(true) ){
+		if( userSelectValueArr.indexOf(true) >= 0 ){
 			countUserSelect();
 		}else{
 			$(".non-alert-des").html("항목을 선택해주세요");
@@ -542,7 +542,7 @@ $(function(){
 		$("#click-01").fadeOut();
 	});
 
-	var art_banner_pos = $(".banner-list").offset().top;
+	var art_banner_pos = $(".banner-area-wrap").offset().top;
 	$("#GO_ART_BANNER").on("click", function(){
 		$("html, body").animate({scrollTop: art_banner_pos}, 1200, "easeOutCubic");
 	});
@@ -578,7 +578,7 @@ $(function(){
 	/******** 모바일 전용 조정 ********/
 
 	if(isMobile==true){
-		$(".title-sub").attr("src","img/sub-title-m.png");
+		$(".title-sub").attr("src","http://img.khan.co.kr/spko/storytelling/2021/carbonprint/sub-title-m.png");
 	}else{
 
 	}

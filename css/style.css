@@ -316,23 +316,23 @@ line-height: 1.7; letter-spacing: -0.3px;  }
 
 .basket-fixed { position: fixed; bottom: 20px; right: 20px; }
 .basket-holder { width: 500px; height: 100%; height: 20px;  }
-.basket-holder .basket-body {position: absolute; z-index: 1; top: 0; left: 0;width: 100%;box-sizing: border-box;padding: 0px 60px;height: 100%; }
+.basket-holder .basket-body {position: absolute; z-index: 1; top: 0; left: 0;width: 100%;box-sizing: border-box;padding: 0px;height: 100%; }
 .basket-holder .basket-body .basket-inside {position: relative;
 width:100%; height: 100%; }
 .basket-holder .basket-body .basket-inside .el { position: absolute; width: 50px; bottom: 0;  }
-.basket-holder .basket-body .basket-inside .el-t1 { width : 35px; }
-.basket-holder .basket-body .basket-inside .el-t2 { width : 70px; }
-.basket-holder .basket-body .basket-inside .el-t3 { width : 30px; }
-.basket-holder .basket-body .basket-inside .el-t4 { width : 100px; }
+.basket-holder .basket-body .basket-inside .el-t1 { width : 25px; }
+.basket-holder .basket-body .basket-inside .el-t2 { width : 40px; }
+.basket-holder .basket-body .basket-inside .el-t3 { width : 22px; }
+.basket-holder .basket-body .basket-inside .el-t4 { width : 70px; }
 .basket-holder .basket-body .basket-inside .el img { width: 100%; }
 .basket-holder .basket-cover { position: relative; z-index: 2;}
 .basket-holder .basket-cover img { opacity:0;}
 
-.sec--result { position: relative;  min-height: 300px;  background: #0c1040; background:url("../img/blue-grad.jpg") no-repeat; background-size:cover; }
+.sec--result { position: relative;  min-height: 300px;  background: #0c1040; background:url("http://img.khan.co.kr/spko/storytelling/2021/carbonprint/blue-grad.jpg") no-repeat; background-size:cover; }
 .test-result-background { position: absolute; z-index:0; top: 0; left:0; right:0; bottom: 0; width:100%; height:100%;  }
 .test-result-body { position: relative; z-index:1; display:none; }
 .test-result-wrap { width: 100%; max-width: 850px;  margin: 0 auto; padding-top: 100px;}
-.test-paperTexture { width:100%; background: url("../img/paper-texture.jpg") repeat-y;  background-size: 100% auto; box-sizing: border-box; padding: 50px;border-radius: 4px 4px 0px 0px;}
+.test-paperTexture { width:100%; background: url("http://img.khan.co.kr/spko/storytelling/2021/carbonprint/paper-texture.jpg") repeat-y;  background-size: 100% auto; box-sizing: border-box; padding: 50px;border-radius: 4px 4px 0px 0px;}
 .test-result-wrap h2 { display: none;}
 .test-result-wrap .title-img { display:block; margin:0px auto; margin-bottom: 40px; width: 154px; }
 .test-result-wrap .title-img  img { width: 100%; margin: 0 auto;  border-bottom: 4px double #2834d0;padding-bottom: 10px; }
@@ -390,7 +390,7 @@ background: none; border-left: 1px dashed rgba(0,0,0,0.3);}
 
 .sec--outro { }
 .graph-holder { margin: 50px auto; }
-.graph-holder h2 { font-size: 20px;}
+.graph-holder h2 { font-size: 22px;}
 .graph-holder .graph-img {}
 .graph-holder .graph-img img { display: block; margin: 0 auto;}
 .graph-holder .caption { max-width: 500px; width: 100%;font-size: 15px; text-align: left;  margin: 20px auto; color: #777;}
@@ -401,6 +401,9 @@ background: none; border-left: 1px dashed rgba(0,0,0,0.3);}
 .ref-box ul li {}
 .ref-box ul li span.head {font-weight: bold; margin-right: 20px;}
 .para-holder p u.link { cursor: pointer; }
+
+.para-box-des {margin: 0px auto;   padding: 20px;box-sizing: border-box;max-width: 650px;background: rgba(255,255,255,0.1);}
+.para-box-des p { font-size: 17px;text-align: center;font-family: 'Noto Sans KR';}
 
 .legend-btn-holder { margin: 20px auto; width: 280px; }
 .legend-btn-holder .each-legend-btn { display:inline-block;  width: 120px; margin: 0px 10px;box-sizing: border-box;float: left; text-align: center;padding: 7px 15px;  padding-bottom: 5px;cursor: pointer;border: 1px solid #3e3e3e;transition:all 0.3s ease 0s; }
@@ -438,7 +441,7 @@ color: #fff;width: 100px;text-align: center;top: -20px;left: 50%;margin-left: -5
 
 .section-list .art-banner { margin-bottom: 0; padding-bottom: 150px;}
 .art-banner { position: relative; background: #111; width:100%; box-sizing:border-box; padding: 100px 0; }
-.banner-area-back { position: absolute; top:0; left:0; width:100%; height:100%; background: url("../img/banner-area-bg-2.jpg") no-repeat;
+.banner-area-back { position: absolute; top:0; left:0; width:100%; height:100%; background: url("http://img.khan.co.kr/spko/storytelling/2021/carbonprint/banner-area-bg-2.jpg") no-repeat;
 background-size:100%; background-attachment:fixed; opacity:0.7; background-position: center bottom; }
 .banner-area-wrap {  width :100%; height:100%; padding-top: 50px; }
 .art-banner .banner-area-title { width:100%; }
@@ -455,12 +458,12 @@ border: 2px solid rgba(255,255,255,0.1); border-radius: 4px; background: rgba(25
 .each-banner:hover{border: 2px solid rgba(255,255,255,0.5);box-shadow: 2px 2px 10px rgba(255,255,255,0.2);}
 .each-banner-bg {transition:all 0.3s ease 0s; position: absolute; top: 0; left:0; width:100%; height:100%; opacity:0.4; }
 .each-banner:hover > .each-banner-bg { opacity:0.9; }
-.banner-bg--1 { background: url("../img/banner_01_bg.jpg") no-repeat;background-size:cover;}
-.banner-bg--2 { background: url("../img/banner_02_bg.jpg") no-repeat;background-size:cover;}
-.banner-bg--3 { background: url("../img/banner_03_bg.jpg") no-repeat;background-size:cover;}
-.banner-bg--4 { background: url("../img/banner_04_bg.jpg") no-repeat;background-size:cover;}
-.banner-bg--5 { background: url("../img/banner_05_bg.jpg") no-repeat;background-size:cover;}
-.banner-bg--6 { background: url("../img/banner_06_bg.jpg") no-repeat;background-size:cover;}
+.banner-bg--1 { background: url("http://img.khan.co.kr/spko/storytelling/2021/carbonprint/banner_01_bg.jpg") no-repeat;background-size:cover;}
+.banner-bg--2 { background: url("http://img.khan.co.kr/spko/storytelling/2021/carbonprint/banner_02_bg.jpg") no-repeat;background-size:cover;}
+.banner-bg--3 { background: url("http://img.khan.co.kr/spko/storytelling/2021/carbonprint/banner_03_bg.jpg") no-repeat;background-size:cover;}
+.banner-bg--4 { background: url("http://img.khan.co.kr/spko/storytelling/2021/carbonprint/banner_04_bg.jpg") no-repeat;background-size:cover;}
+.banner-bg--5 { background: url("http://img.khan.co.kr/spko/storytelling/2021/carbonprint/banner_05_bg.jpg") no-repeat;background-size:cover;}
+.banner-bg--6 { background: url("http://img.khan.co.kr/spko/storytelling/2021/carbonprint/banner_06_bg.jpg") no-repeat;background-size:cover;}
 
 
 /***darkmode***/
@@ -616,15 +619,18 @@ background-size: 15px 15px; padding-right: 20px;background-position: right;  cur
 /***** 노트북 *****/
 @media screen and (max-width: 1380px) {
 .story-top-graphic {  height: 400px; }
-.float-el-holder {margin-left: -500px; width: 1000px;}
+.float-el-holder {margin-left: -450px; width: 900px;}
 .leaf--1 { top: 100px; }
 .leaf--3 { left: -20px; }
 .leaf--5 { top: 300px; }
 
-.title-holder .page-title-main { width: 800px; }
+.title-holder .page-title-main { width: 700px; }
 .title-holder .page-title-main > img { width: 100%; }
+.title-holder .title-sub { width: 500px; }
 
-
+.each-el .el-thumb img { height: 100px; }
+.each-el > p { font-size: 18px; }
+.each-banner .art-title { font-size: 18px; }
 }
 
 /***** 모바일 Portraits ****/
@@ -785,6 +791,9 @@ background-size: 15px 15px; padding-right: 20px;background-position: right;  cur
 span.jump { display:block; }
 
 .section-list .sec--outro.darkMode { padding: 30px 0; }
+
+.para-box-des { padding: 12px; }
+.para-box-des p { text-align: left; font-size: 14.5px;}
 
 .ref-box {  font-size: 13.5px; margin: 0px auto; border: none; padding: 12px;}
 .banner-area-title .project-title { font-size: 18px; }
